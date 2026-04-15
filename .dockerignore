@@ -1,0 +1,17 @@
+# small ignore file to exclude common Python and IDE artifacts 
+# from the Docker build context
+
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.env.*
+.ipynb_checkpoints
+.vscode
+.git
+.gitignore
+pytest_cache
+.DS_Store
