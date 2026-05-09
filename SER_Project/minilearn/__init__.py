@@ -10,4 +10,10 @@ Usage:
     from minilearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 """
 
+# Export subpackages for easier imports. Implementations live in the
+# `classifiers`, `preprocessing`, and `metrics` subpackages.
+from . import classifiers, preprocessing, metrics
+
 __version__ = "0.1.0"
+
+__all__ = ["classifiers", "preprocessing", "metrics", "__version__"] # idk if version should be included.
