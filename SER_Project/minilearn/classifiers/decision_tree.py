@@ -11,7 +11,6 @@ from dataclasses import dataclass
 
 import numpy as np
 
-
 @dataclass
 class _TreeNode:
 	"""Single node in the decision tree."""
@@ -21,7 +20,6 @@ class _TreeNode:
 	left: "_TreeNode | None" = None
 	right: "_TreeNode | None" = None
 	value: object | None = None
-
 
 class DecisionTreeClassifier:
 	"""A small decision tree classifier built from scratch.

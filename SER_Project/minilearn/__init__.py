@@ -11,9 +11,9 @@ Usage:
 """
 
 # Export subpackages for easier imports. Implementations live in the
-# `classifiers`, `preprocessing`, and `metrics` subpackages.
-from . import classifiers, preprocessing, metrics
+# `classifiers`, `preprocessing`, `metrics`, and `model_selection` modules.
+from . import classifiers, preprocessing, metrics, model_selection
 
 __version__ = "0.1.0"
 
-__all__ = ["classifiers", "preprocessing", "metrics", "__version__"] # idk if version should be included.
+__all__ = ["classifiers", "preprocessing", "metrics", "model_selection", "__version__"]
