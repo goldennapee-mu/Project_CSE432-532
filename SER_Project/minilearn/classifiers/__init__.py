@@ -11,9 +11,10 @@ Implement classifier utilities here:
 Each utility should follow a minimal, well-documented API.
 """
 
-from . import naive_bayes
 from .decision_tree import DecisionTreeClassifier
 from .knn import KNearestNeighbors
 from .logistic import LogisticRegression
+from .naive_bayes import GaussianNaiveBayes
+from .svm import SupportVectorMachine
 
-__all__ = ["LogisticRegression", "DecisionTreeClassifier", "KNearestNeighbors", "naive_bayes"]
+__all__ = ["LogisticRegression", "DecisionTreeClassifier", "KNearestNeighbors", "GaussianNaiveBayes", "SupportVectorMachine"]
