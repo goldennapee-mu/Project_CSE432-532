@@ -11,7 +11,8 @@ Implement classifier utilities here:
 Each utility should follow a minimal, well-documented API.
 """
 
-from . import decision_tree, knn, naive_bayes
+from . import knn, naive_bayes
+from .decision_tree import DecisionTreeClassifier
 from .logistic import LogisticRegression
 
-__all__ = ["LogisticRegression", "decision_tree", "knn", "naive_bayes"]
+__all__ = ["LogisticRegression", "DecisionTreeClassifier", "knn", "naive_bayes"]
