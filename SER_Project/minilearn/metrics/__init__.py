@@ -9,4 +9,10 @@ Implement metric utilities here:
 Each utility should follow a minimal, well-documented API.
 """
 
-__all__ = ["classification", "confusion"]
+from .classification import accuracy_score, precision_score, recall_score, f1_score
+from .confusion import confusion_matrix
+
+__all__ = [
+    'accuracy_score', 'precision_score', 'recall_score', 'f1_score',
+    'confusion_matrix',
+]
