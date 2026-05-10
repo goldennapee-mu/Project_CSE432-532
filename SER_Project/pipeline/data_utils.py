@@ -95,7 +95,6 @@ def parse_ravdess_filename(filepath: PathLike) -> dict:
         "statement": RAVDESS_STATEMENT.get(statement, "unknown"),
     }
 
-
 def build_ravdess_metadata(filepaths: Iterable[PathLike]) -> pd.DataFrame:
     """
     Build a metadata table by parsing a collection of RAVDESS files.

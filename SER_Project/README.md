@@ -17,7 +17,7 @@ pip install -r requirements.txt
 python download_data.py
 
 # 4. Extract features
-# e.g. python extract_features.py --data_dir data/ --output features.csv
+# e.g. python pipeline/extract_features.py --data_dir data/ --output data/features.csv
 
 # 5. Open the classification notebook
 jupyter notebook notebooks/01_classification.ipynb
@@ -33,7 +33,9 @@ SER_Project/
 │   └── metrics/                # accuracy, precision, recall, F1, confusion matrix
 ├── notebooks/
 │   └── 01_classification.ipynb # End-to-end SER classification demo
-├── extract_features.py         # Audio → feature CSV pipeline
+├── pipeline/                   # Project data parsing + feature pipelines
+│   ├── data_utils.py
+│   └── extract_features.py
 ├── download_data.py            # Dataset download helper
 ├── requirements.txt            # Python dependencies (one example)
 └── README.md
