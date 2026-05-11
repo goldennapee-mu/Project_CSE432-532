@@ -4,6 +4,8 @@ K-Means clustering implementation.
 Implements unsupervised clustering using the K-Means algorithm.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from typing import Optional, Tuple, cast
 

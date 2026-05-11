@@ -4,6 +4,8 @@ Feature scaling utilities module.
 Implements StandardScaler for feature normalization.
 """
 
+from __future__ import annotations
+
 import numpy as np
 
 class StandardScaler:

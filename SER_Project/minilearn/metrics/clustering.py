@@ -6,8 +6,9 @@ Implements metrics for evaluating clustering quality:
 - Normalized Mutual Information (NMI)
 """
 
-import numpy as np
+from __future__ import annotations
 
+import numpy as np
 
 def adjusted_rand_index(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     """Compute Adjusted Rand Index (ARI).

@@ -4,9 +4,10 @@ Data splitting utilities module.
 Implements train_test_split for partitioning datasets.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from typing import Tuple, Optional
-
 
 def train_test_split(X: np.ndarray, y: Optional[np.ndarray] = None, 
                     test_size: float = 0.2, random_state: Optional[int] = None,

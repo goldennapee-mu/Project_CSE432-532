@@ -4,9 +4,10 @@ Principal Component Analysis (PCA) for dimensionality reduction.
 Implements PCA via eigendecomposition of the covariance matrix.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from typing import Optional
-
 
 class PCA:
     """Principal Component Analysis (PCA).

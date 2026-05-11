@@ -4,9 +4,10 @@ Confusion matrix utilities module.
 Implements confusion matrix computation for evaluating classification performance.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from typing import Optional
-
 
 def confusion_matrix(y_true: np.ndarray, y_pred: np.ndarray, 
                      labels: Optional[np.ndarray] = None) -> np.ndarray:

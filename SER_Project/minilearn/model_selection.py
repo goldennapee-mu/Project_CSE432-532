@@ -4,6 +4,8 @@ K-Fold Cross-Validation utilities module.
 Implements stratified k-fold cross-validation for model evaluation and hyperparameter tuning.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from typing import Iterator, Optional, Tuple
 

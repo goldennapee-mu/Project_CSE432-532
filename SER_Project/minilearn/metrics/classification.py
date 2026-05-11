@@ -8,6 +8,8 @@ Implements evaluation metrics for classification tasks:
 - f1_score: Harmonic mean of precision and recall
 """
 
+from __future__ import annotations
+
 import numpy as np
 
 def accuracy_score(y_true: np.ndarray, y_pred: np.ndarray) -> float:

@@ -5,9 +5,10 @@ This module implements a linear SVM using hinge loss and gradient descent,
 supporting multi-class classification via One-vs-Rest strategy.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from typing import Optional
-
 
 class SupportVectorMachine:
     """Linear SVM classifier using hinge loss and gradient descent.

@@ -4,10 +4,11 @@ k-nearest neighbors classifier module.
 This module implements a k-nearest neighbors classifier following scikit-learn conventions.
 """
 
+from __future__ import annotations
+
 import numpy as np
 from collections import Counter
 from typing import Optional
-
 
 class KNearestNeighbors:
     """k-Nearest Neighbors classifier using majority vote.

@@ -11,7 +11,6 @@ from dataclasses import dataclass
 
 import numpy as np
 
-
 def _softmax(logits: np.ndarray) -> np.ndarray:
 	"""Compute row-wise softmax in a numerically stable way."""
 	shifted = logits - np.max(logits, axis=1, keepdims=True)

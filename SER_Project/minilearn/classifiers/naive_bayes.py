@@ -4,6 +4,8 @@ Gaussian Naive Bayes classifier module.
 This module implements Gaussian Naive Bayes following scikit-learn conventions.
 """
 
+from __future__ import annotations
+
 import numpy as np
 
 class GaussianNaiveBayes:
