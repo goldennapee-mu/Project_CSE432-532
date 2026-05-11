@@ -16,6 +16,7 @@ from .logistic import LogisticRegression
 from .knn import KNearestNeighbors
 from .naive_bayes import GaussianNaiveBayes
 from .decision_tree import DecisionTreeClassifier
+from .ann import SimpleANNClassifier
 from .svm import SupportVectorMachine
 
-__all__ = ["LogisticRegression", "DecisionTreeClassifier", "KNearestNeighbors", "GaussianNaiveBayes", "SupportVectorMachine"]
+__all__ = ["LogisticRegression", "DecisionTreeClassifier", "KNearestNeighbors", "GaussianNaiveBayes", "SimpleANNClassifier", "SupportVectorMachine"]
