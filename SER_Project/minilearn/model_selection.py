@@ -32,7 +32,12 @@ class StratifiedKFold:
         self.shuffle = shuffle
         self.random_state = random_state
     
-    def split(self, X: np.ndarray, y: np.ndarray) -> Iterator[Tuple[np.ndarray, np.ndarray]]:
+    def split(
+        self,
+        X: np.ndarray,
+        y: np.ndarray,
+        groups: Optional[np.ndarray] = None
+    ) -> Iterator[Tuple[np.ndarray, np.ndarray]]:
         """Generate indices to split data into training and test sets.
         
         Parameters
@@ -41,6 +46,8 @@ class StratifiedKFold:
             Feature matrix.
         y : array-like, shape (n_samples,)
             Target labels.
+        groups : array-like, optional
+            Group labels for the samples. Not used, present for API compatibility.
             
         Yields
         ------
@@ -80,8 +87,13 @@ class StratifiedKFold:
             
             yield train_idx, test_idx
     
-    def get_n_splits(self) -> int:
-        """Return number of splits."""
+    def get_n_splits(
+        self,
+        X: Optional[np.ndarray] = None,
+        y: Optional[np.ndarray] = None,
+        groups: Optional[np.ndarray] = None
+    ) -> int:
+        """Return number of splits (API compatible with scikit-learn)."""
         return self.n_splits
 
 def cross_validate(model, X: np.ndarray, y: np.ndarray, cv=None,
