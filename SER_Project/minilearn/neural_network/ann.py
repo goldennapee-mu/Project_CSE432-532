@@ -1,4 +1,9 @@
-"""Simple ANN classifier for MiniLearn."""
+"""
+ANN neural_network module.
+
+This implementation serves as a very simple Neural Network
+for use in MiniLearn notebooks.
+"""
 
 from __future__ import annotations
 
@@ -11,6 +16,7 @@ def _softmax(logits: np.ndarray) -> np.ndarray:
 	shifted = logits - np.max(logits, axis=1, keepdims=True)
 	exponentiated = np.exp(shifted)
 	return exponentiated / np.sum(exponentiated, axis=1, keepdims=True)
+
 
 @dataclass
 class SimpleANNClassifier:
